@@ -9,6 +9,10 @@ function createBarChart(data) {
     var otuIDs = data.otu_ids.slice(0, 10).map(id => `OTU ${id}`).reverse();
     var otuLabels = data.otu_labels.slice(0, 10).reverse();
     
+    console.log(sampleValues);
+    console.log(otuIDs);
+    console.log(otuLabels);
+
     var trace = {
       x: sampleValues,
       y: otuIDs,
@@ -69,6 +73,8 @@ function createBarChart(data) {
       displayMetadata(selectedMetadata);
     });
   }
+
+  console.log(sample);
 
 // Function to initialize the dashboard
 function init() {
