@@ -74,8 +74,6 @@ function createBarChart(data) {
     });
   }
 
-  console.log(sample);
-
 // Function to initialize the dashboard
 function init() {
     //Select the dropdown menu
